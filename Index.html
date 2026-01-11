@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stroke</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #EEEEEE;
+      color: #333;
+    }
+    header {
+      background: #000066;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header nav a {
+      margin-left: 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #009298;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .categories a {
+      padding: 10px 20px;
+      background: white;
+      margin: 5px;
+      text-decoration: none;
+      color: #000066;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .news-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .news-card img {
+      width: 100%;
+      display: block;
+    }
+    .news-content {
+      padding: 15px;
+    }
+    .news-content h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .news-content p {
+      font-size: 14px;
+      color: #555;
+    }
+    .news-content a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #008080;
+      font-weight: bold;
+    }
+     footer{
+      text-align:center;
+      color:#000080;
+      font-size:0.9rem;
+      margin:20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">STROKE</div>
+    <nav>
+      <a href="12a5 nguyen nhan.html">Nguyên nhân</a>
+      <a href="12a5 thuc trang.html">Thực trạng</a>
+      <a href="12a5 dieu tri.html">Thuốc & điều trị</a>
+      <a href="12a5 thuc pham.html">Sản phẩm dinh dưỡng</a>
+      <a href="12a5 phong benh.html">Cách phòng bệnh</a>
+      <a href="#">Video</a>
+      <a href="#">Cộng đồng</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Đừng để đột quỵ "." cuộc đời bạn</h1>
+    <p>Tin tức, kiến thức và hướng dẫn y tế đáng tin cậy</p>
+  </section>
+
+  <div class="container">
+
+    <div class="categories">
+      <a href="#">Bệnh tim</a>
+      <a href="#">Tiểu đường</a>
+      <a href="#">Tăng huyết áp</a>
+      <a href="#">Rối loạn mỡ máu</a>
+      <a href="#">Tăng cân / giảm cân</a>
+      <a href="#">Sức khỏe người già</a>
+    </div>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="https://via.placeholder.com/400x230" alt="Tin 1">
+        <div class="news-content">
+          <h3>Làm thế nào để kiểm soát huyết áp?</h3>
+          <p>Huyết áp cao ảnh hưởng tới sức khỏe như thế nào?</p>
+          <a href="#">Đọc tiếp →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="https://via.placeholder.com/400x230" alt="Tin 2">
+        <div class="news-content">
+          <h3>10 thực phẩm tốt cho tim mạch</h3>
+          <p>Danh sách thực phẩm giúp bạn mạnh khỏe hơn.</p>
+          <a href="#">Đọc tiếp →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="https://via.placeholder.com/400x230" alt="Tin 3">
+        <div class="news-content">
+          <h3>Làm sao để ngủ ngon?</h3>
+          <p>Mẹo cải thiện giấc ngủ mỗi đêm.</p>
+          <a href="#">Đọc tiếp →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+    
+      <div>
+        <h3 style="color: black;">Liên hệ</h3>
+        <p>Email: Strokehealthsite@gmail.com</p>
+        <p>Hotline: 0123 456 789</p>
+        <p>Địa chỉ: 12A5-THPT Lý Tự Trọng</p>
+      </div>
+
+      <div>
+        <h3 style="color: black;">Nhận bản tin</h3>
+        <p>Đăng ký để nhận thông tin sức khỏe mới nhất</p>
+        <input type="email" placeholder="Nhập email của bạn">
+        <button>Gửi</button>
+      </div>
+
+      <div>
+        <h3 style="color: black;">Tùy chọn</h3>
+        <p><a href="#">Chính sách bảo mật</a></p>
+        <p><a href="#">Điều khoản sử dụng</a></p>
+        <p><a href="#">Giới thiệu</a></p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 - Website học tập | Nội dung mang tính tham khảo.
+    </div>
+  </footer>
+</body>
+</html>
+
